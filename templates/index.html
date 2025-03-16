@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Performance Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Students Performance Form</Form></h2>
+
+        <!-- Typing Effect Message -->
+        <p id="formMessage" style="font-weight: bold; color: #28a745;"></p>
+
+        <form id="surveyForm" method="Post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="rollno">Roll no</label><br>
+            <input type="rollno" id="rollno" name="rollno" required><br>
+
+            <label for="rollno">Program</label><br>
+            <input type="program" id="program" name="program" required><br>
+
+            <label for="feedback">Feedback</label><br>
+            <input type="text" id="feedback" name="feedback" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
